@@ -61,7 +61,7 @@ export const ProductDetails: React.FC = () => {
           
           <div className="mb-6">
             <span className="text-3xl font-bold text-gray-900">
-              ${product.price.toFixed(2)}
+              £{product.price.toFixed(2)}
             </span>
           </div>
           

@@ -47,7 +47,7 @@ export const Cart: React.FC = () => {
               
               <div className="ml-6 flex-grow">
                 <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                <p className="text-gray-600">${item.price.toFixed(2)}</p>
+                <p className="text-gray-600">£{item.price.toFixed(2)}</p>
                 
                 <div className="mt-4 flex items-center space-x-4">
                   <div className="flex items-center space-x-2">
@@ -77,7 +77,7 @@ export const Cart: React.FC = () => {
               
               <div className="ml-6">
                 <p className="text-lg font-semibold text-gray-900">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  £{(item.price * item.quantity).toFixed(2)}
                 </p>
               </div>
             </div>
@@ -90,7 +90,7 @@ export const Cart: React.FC = () => {
             
             <div className="flex justify-between mb-2">
               <span className="text-gray-600">Subtotal</span>
-              <span className="text-gray-900">${state.total.toFixed(2)}</span>
+              <span className="text-gray-900">£{state.total.toFixed(2)}</span>
             </div>
             
             <div className="flex justify-between mb-2">
@@ -103,7 +103,7 @@ export const Cart: React.FC = () => {
             <div className="flex justify-between mb-4">
               <span className="text-lg font-semibold text-gray-900">Total</span>
               <span className="text-lg font-semibold text-gray-900">
-                ${state.total.toFixed(2)}
+                £{state.total.toFixed(2)}
               </span>
             </div>
             

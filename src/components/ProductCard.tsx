@@ -30,7 +30,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <p className="mt-2 text-gray-600 line-clamp-2">{product.description}</p>
         <div className="mt-4 flex items-center justify-between">
           <span className="text-xl font-bold text-gray-900">
-            ${product.price.toFixed(2)}
+            £{product.price.toFixed(2)}
           </span>
           <button
             onClick={() => dispatch({ type: 'ADD_TO_CART', payload: product })}
